@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Carrito — Servicios profesionales de XXX</title>
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; color: #222; }
-    .card { max-width: 720px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 0 auto; }
-    .row { display: flex; justify-content: space-between; align-items: center; }
-    .btn { display: inline-block; padding: 10px 14px; border-radius: 6px; text-decoration: none; color: #fff; background: #2563eb; }
-    .btn.secondary { background: #10b981; }
-    nav a { color: #2563eb; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
-    th, td { border-bottom: 1px solid #e5e7eb; padding: 10px; text-align: left; }
-    .muted { color: #666; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav><a href="index.html">&larr; Seguir comprando</a></nav>
-
-  <article class="card">
+  <div class="container">
     <h1>Carrito</h1>
-    <p class="muted">Revisa tu pack y procede al pago seguro.</p>
-
-    <div id="contenido-carrito"></div>
-
-    <!-- TODO: Sustituye por tu enlace de pago real (PayPal, Stripe Checkout, Redsys, etc.) -->
-    <p style="margin-top:16px;">
-      <a id="btn-pagar" class="btn secondary" href="#" target="_blank" rel="noopener">Pagar ahora</a>
-    </p>
-  </article>
+    <div class="card" id="contenido-carrito"></div>
+    <p style="text-align:center;"><a id="btn-pagar" class="btn" href="#" target="_blank">Pagar ahora</a></p>
+  </div>
 
   <script>
-    // Lee el pack desde la URL, ej: carrito.html?pack=40
     const params = new URLSearchParams(window.location.search);
     const horas = params.get('pack');
-
-    // Precios de ejemplo — TODO: ajusta tus precios
     const precios = { '20': 400, '40': 760, '100': 1800 };
     const precio = precios[horas] ?? null;
 
@@ -49,25 +26,10 @@
       btnPagar.style.display = 'none';
     } else {
       cont.innerHTML = `
-        <table aria-label="Resumen del carrito">
-          <thead>
-            <tr><th>Producto</th><th>Horas</th><th>Precio</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Consultoría de marketing — Pack</td>
-              <td>${horas} h</td>
-              <td>${precio} €</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>Has añadido el Pack de ${horas} horas</p>
+        <p>Precio: ${precio} €</p>
       `;
-
-      // TODO: Reemplaza por tu enlace de TPV/PayPal/Stripe.
-      // Ejemplo PayPal.Me con importe aproximado (no es exacto sin integración):
-      // Si usas PayPal.Me, el formato es: https://www.paypal.me/USUARIO/IMPORTE
-      const paypalUsuario = 'TU_USUARIO_PAYPALME';
-      btnPagar.href = `https://www.paypal.me/${paypalUsuario}/${precio}`;
+      btnPagar.href = `https://www.paypal.me/TU_USUARIO_PAYPALME/${precio}`;
     }
   </script>
 </body>
