@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <title>Servicios profesionales de XXX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Servicios profesionales de XXX</h1>
+  <div class="container">
+    <h1>Servicios profesionales de XXX</h1>
 
-  <!-- Imagen profesional que lleva a "Sobre mí" -->
-  <a href="sobre-mi.html">
-    <img src="assets/mi_imagen.png" alt="Foto profesional de XXX" width="200">
-  </a>
+    <!-- Imagen profesional -->
+    <div class="card">
+      <a href="sobre-mi.html">
+        <img src="assets/mi_imagen.png" alt="Foto profesional de XXX" width="200">
+      </a>
+      <p>Haz clic en mi foto para conocer más sobre mí</p>
+    </div>
 
-  <!-- Enlace a Excel Online -->
-  <p><a href="https://1drv.ms/x/s!TU_ENLACE_EXCEL_ONLINE" target="_blank">Ver ejercicio en Excel Online</a></p>
+    <!-- Enlace a Excel Online -->
+    <div class="card">
+      <p><a class="btn" href="https://1drv.ms/x/s!TU_ENLACE_EXCEL_ONLINE" target="_blank">Ver ejercicio en Excel Online</a></p>
+    </div>
 
-  <!-- Packs -->
-  <h2>Packs de horas</h2>
-  <a href="pack20.html">
-    <img src="assets/pack20.png" alt="Pack 20 horas" width="200">
-  </a>
-  <a href="pack40.html">
-    <img src="assets/pack40.png" alt="Pack 40 horas" width="200">
-  </a>
-  <a href="pack100.html">
-    <img src="assets/pack100.png" alt="Pack 100 horas" width="200">
-  </a>
+    <!-- Packs -->
+    <h2>Packs de horas</h2>
+    <div class="card">
+      <a href="pack20.html"><img src="assets/pack20.png" alt="Pack 20 horas" width="200"></a>
+      <p><a class="btn" href="pack20.html">Ver Pack 20h</a></p>
+    </div>
+    <div class="card">
+      <a href="pack40.html"><img src="assets/pack40.png" alt="Pack 40 horas" width="200"></a>
+      <p><a class="btn" href="pack40.html">Ver Pack 40h</a></p>
+    </div>
+    <div class="card">
+      <a href="pack100.html"><img src="assets/pack100.png" alt="Pack 100 horas" width="200"></a>
+      <p><a class="btn" href="pack100.html">Ver Pack 100h</a></p>
+    </div>
 
-  <!-- QR -->
-  <h2>Tarjeta de presentación</h2>
-  <p>Escanea este QR para ver mi carta de presentación móvil</p>
-  <img src="assets/mi_qr.png" alt="Código QR de mi carta de presentación" width="150">
+    <!-- QR -->
+    <h2>Tarjeta de presentación</h2>
+    <div class="card">
+      <p>Escanea este QR para ver mi carta de presentación móvil</p>
+      <img src="assets/mi_qr.png" alt="Código QR de mi carta de presentación" width="150">
+    </div>
+  </div>
 </body>
 </html>
