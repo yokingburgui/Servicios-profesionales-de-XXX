@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Ajustes específicos para móvil */
     header {
       background: linear-gradient(135deg, #2563eb, #1e40af);
       color: white;
@@ -23,10 +22,64 @@
     }
     header h1 { margin: 10px 0 5px; font-size: 1.5em; }
     header p { font-size: 0.95em; opacity: 0.9; }
+    section { padding: 20px; }
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #1e40af;
+      border-left: 4px solid #2563eb;
+      padding-left: 8px;
+    }
+    ul { list-style: none; padding: 0; }
+    ul li {
+      background: white;
+      margin: 10px 0;
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      font-size: 0.95em;
+    }
+    .contacto {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+    }
+    .contacto p { margin: 6px 0; }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/mi_imagen.png" alt="Foto profesional de XXX">
+    <img src="mi_imagen.png" alt="Foto profesional de XXX">
     <h1>XXX — Consultor de Marketing Digital</h1>
-    <p>Transformo ideas en resultados medibles
+    <p>Transformo ideas en resultados medibles</p>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>✅ Auditoría rápida de tu estrategia digital</li>
+      <li>✅ Optimización de campañas en Google Ads y Meta Ads</li>
+      <li>✅ Estrategias de redes sociales y contenidos</li>
+      <li>✅ SEO y posicionamiento web</li>
+      <li>✅ Creación de embudos de conversión</li>
+      <li>✅ Reporting y analítica avanzada</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experiencia</h2>
+    <p>
+      Más de 10 años ayudando a empresas y startups a crecer en entornos digitales.  
+      He trabajado en proyectos de marketing internacional, optimización de embudos y campañas multicanal.
+    </p>
+  </section>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>📧 contacto@tucorreo.com</p>
+    <p>📱 +34 600 123 456</p>
+    <a class="btn" href="index.html">Ver web completa</a>
+  </section>
+</body>
+</html>
