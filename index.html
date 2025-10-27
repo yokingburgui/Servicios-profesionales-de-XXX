@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios profesionales de XXX</title>
+  <meta name="description" content="Consultoría de marketing digital: packs de horas, portfolio y contacto." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #222; }
+    header, footer { padding: 16px 24px; background: #f5f7fa; }
+    main { padding: 24px; max-width: 900px; margin: 0 auto; }
+    .hero { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .hero img { border-radius: 8px; max-width: 180px; height: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; background: #fff; }
+    .card img { width: 100%; height: auto; border-radius: 6px; }
+    .btn { display: inline-block; padding: 10px 14px; border-radius: 6px; text-decoration: none; color: #fff; background: #2563eb; }
+    .btn.secondary { background: #10b981; }
+    .muted { color: #666; }
+    .qr { max-width: 140px; border: 1px solid #e5e7eb; border-radius: 8px; }
+    nav a { margin-right: 12px; color: #2563eb; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Servicios profesionales de XXX</h1>
+    <nav>
+      <a href="#packs">Packs de horas</a>
+      <a href="#excel">Ejercicio en Excel</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Presentación profesional">
+      <!-- TODO: Reemplaza mi_imagen.jpg por tu imagen y el href por tu LinkedIn/portfolio -->
+      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener">
+        <img src="assets/mi_imagen.jpg" alt="Imagen profesional de XXX" />
+      </a>
+      <div>
+        <h2>Marketing y crecimiento basado en datos</h2>
+        <p>Te ayudo a definir tu estrategia, ejecutar campañas y medir resultados con claridad.</p>
+        <!-- TODO: Reemplaza el enlace a tu hoja de Excel Online -->
+        <p id="excel"><a class="btn" href="https://1drv.ms/x/s!TU_ENLACE_EXCEL_ONLINE" target="_blank" rel="noopener">Ver ejercicio en Excel Online</a></p>
+      </div>
+    </section>
+
+    <section id="packs" aria-label="Packs de horas">
+      <h2>Elige tu pack de horas</h2>
+      <div class="grid">
+        <article class="card">
+          <!-- TODO: Reemplaza pack20.jpg -->
+          <a href="pack20.html">
+            <img src="assets/pack20.jpg" alt="Pack de 20 horas" />
+          </a>
+          <h3>Pack 20 horas</h3>
+          <p class="muted">Ideal para auditoría rápida y puesta en marcha.</p>
+          <a class="btn" href="pack20.html">Ver detalles</a>
+        </article>
+
+        <article class="card">
+          <!-- TODO: Reemplaza pack40.jpg -->
+          <a href="pack40.html">
+            <img src="assets/pack40.jpg" alt="Pack de 40 horas" />
+          </a>
+          <h3>Pack 40 horas</h3>
+          <p class="muted">Exploración profunda y optimización de campañas.</p>
+          <a class="btn" href="pack40.html">Ver detalles</a>
+        </article>
+
+        <article class="card">
+          <!-- TODO: Reemplaza pack100.jpg -->
+          <a href="pack100.html">
+            <img src="assets/pack100.jpg" alt="Pack de 100 horas" />
+          </a>
+          <h3>Pack 100 horas</h3>
+          <p class="muted">Ejecución integral y escalado del crecimiento.</p>
+          <a class="btn" href="pack100.html">Ver detalles</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" aria-label="Tarjeta de presentación y QR">
+      <h2>Tarjeta de presentación</h2>
+      <p>Escanea el QR para guardar mis datos y abrir esta web desde tu móvil.</p>
+      <!-- TODO: Reemplaza mi_qr.png con el QR que genere la URL de tu sitio (GitHub Pages) -->
+      <img class="qr" src="assets/mi_qr.png" alt="Código QR con enlace a la web de XXX" />
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 XXX — Barcelona</small>
+  </footer>
+</body>
+</html>
